@@ -49,20 +49,20 @@
                 </div>
                 <div class="col-6">
                     <label for="author-name" class="form-label fw-semibold">Nome Autore</label>
-                    <input name="author-name" type="text" class="form-control fw-semibold" placeholder="Inserisci il nome dell'autore" id="author-name">
+                    <input required name="author-name" type="text" class="form-control fw-semibold" placeholder="Inserisci il nome dell'autore" id="author-name">
                 </div>
                 <div class="col-6">
                     <label for="author-surname" class="form-label fw-semibold">Cognome Autore</label>
-                    <input name="author-surname" type="text" class="form-control fw-semibold" placeholder="Inserisci il cognome dell'autore" id="author-surname">
+                    <input required name="author-surname" type="text" class="form-control fw-semibold" placeholder="Inserisci il cognome dell'autore" id="author-surname">
                 </div>
                 <div class="col-12">
                     <label for="book-title" class="form-label fw-semibold">Titolo</label>
-                    <input name="book-title" type="text" class="form-control fw-semibold" id="book-title" placeholder="Inserisci il titolo del libro">
+                    <input required name="book-title" type="text" class="form-control fw-semibold" id="book-title" placeholder="Inserisci il titolo del libro">
                     <div id="title-help" class="form-text fw-semibold">Titolo versione italiana</div>
                 </div>
                 <div class="col-md-4">
                     <label for="genre" class="form-label fw-semibold">Genere</label>
-                    <select name="genre" id="genre" class="form-select fw-semibold">
+                    <select required name="genre" id="genre" class="form-select fw-semibold">
                         <option selected>Scegli il genere</option>
                         <option>Giallo</option>
                         <option>Poliziesco</option>
@@ -75,12 +75,12 @@
                 </div>
                 <div class="col-md-4">
                     <label for="pub-year" class="form-label fw-semibold">Anno di Pubblicazione</label>
-                    <input name="pub-year" type="text" class="form-control fw-semibold" placeholder="Inserisci l'anno" id="pub-year">
+                    <input required name="pub-year" type="text" class="form-control fw-semibold" maxlength="4" placeholder="Inserisci l'anno" id="pub-year">
                 </div>
                 
                 <div class="col-md-4 pb-3">
                     <label for="isbn-code" class="form-label fw-semibold">ISBN#</label>
-                    <input name="isbn-code" type="text" class="form-control fw-semibold" placeholder="Inserisci il codice ISBN#" id="isbn-code">
+                    <input required name="isbn-code" type="text" class="form-control fw-semibold" maxlength="13" minlength="13" placeholder="Inserisci il codice ISBN#" id="isbn-code">
                 </div>
                 <div class="col-12 border-top border-1 pt-4">
                     <label for="book-notes" class="form-label fw-semibold">Note</label>
