@@ -8,7 +8,100 @@
     <script src="https://kit.fontawesome.com/1831e87db4.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xxl bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img class="d-block" src="./img/duck.png" height="60px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Catalogo Libri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anagrafica Utenti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Storico Prestiti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 text-bg-light" type="search" placeholder="Cerca..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Cerca</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Main -->
+    <!-- Form -->
+     <section>
+        <div class="container">
+            <form class="row g-4">
+                <div class="pt-4">
+                    <h2>Nuovo Libro</h2>
+                </div>
+                <div class="col-6">
+                    <label for="author-name" class="form-label fw-semibold">Nome Autore</label>
+                    <input type="text" class="form-control fw-semibold" placeholder="Inserisci il nome dell'autore" id="author-name">
+                </div>
+                <div class="col-6">
+                    <label for="author-surname" class="form-label fw-semibold">Cognome Autore</label>
+                    <input type="text" class="form-control fw-semibold" placeholder="Inserisci il cognome dell'autore" id="author-surname">
+                </div>
+                <div class="col-12">
+                    <label for="book-title" class="form-label fw-semibold">Titolo</label>
+                    <input type="text" class="form-control fw-semibold" id="book-title" placeholder="Inserisci il titolo del libro">
+                    <div id="title-help" class="form-text fw-semibold">Titolo versione italiana</div>
+                </div>
+                <div class="col-md-4">
+                    <label for="genre" class="form-label fw-semibold">Genere</label>
+                    <select id="genre" class="form-select fw-semibold">
+                        <option selected>Scegli il genere</option>
+                        <option>Giallo</option>
+                        <option>Poliziesco</option>
+                        <option>Romanzo Rosa</option>
+                        <option>Fantasy</option>
+                        <option>Storico</option>
+                        <option>Sci-fi</option>
+                        <option>Altro</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="pub-year" class="form-label fw-semibold">Anno di Pubblicazione</label>
+                    <input type="text" class="form-control fw-semibold" placeholder="Inserisci l'anno" id="pub-year">
+                </div>
+                
+                <div class="col-md-4 pb-3">
+                    <label for="isbn-code" class="form-label fw-semibold">ISBN#</label>
+                    <input type="text" class="form-control fw-semibold" placeholder="Inserisci il codice ISBN#" id="isbn-code">
+                </div>
+                <div class="col-12 border-top border-1 pt-4">
+                    <label for="book-notes" class="form-label fw-semibold">Note</label>
+                    <textarea class="form-control fw-semibold" name="book-notes" id="book-notes" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="digital-version">
+                        <label class="form-check-label fw-semibold" for="digital-version">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                </div>
+            </form>
+        </div>
+        
 
+     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
